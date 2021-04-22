@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="TP1">
+  <ClassDiagramComponents>
+    <Class name="Humano" package="TP1" visibility="public" xPosition="10.0" yPosition="124.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="jugarConRobot" returnType="void" visibility="public">
+          <Argument type="Robot" name="robot1"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Robot" package="TP1" visibility="public" xPosition="367.0" yPosition="20.0">
+      <Fields>
+        <Field name="bateria" type="int" visibility="private"/>
+        <Field name="encendido" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="getEncendido" returnType="boolean" visibility="public"/>
+        <Method name="avanzar" returnType="void" visibility="public">
+          <Argument type="int" name="cantidadDePasos"/>
+        </Method>
+        <Method name="retroceder" returnType="void" visibility="public">
+          <Argument type="int" name="cantidadDePasos"/>
+        </Method>
+        <Method name="dormir" returnType="void" visibility="public"/>
+        <Method name="despertar" returnType="void" visibility="public"/>
+        <Method name="recargar" returnType="void" visibility="public"/>
+        <Method name="bateriaLlena" returnType="boolean" visibility="public"/>
+        <Method name="bateriaVacia" returnType="boolean" visibility="public"/>
+        <Method name="energiaActual" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="TestJuego" package="TP1" visibility="public" xPosition="725.0" yPosition="124.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="TP1.Humano" target="TP1.Robot" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
